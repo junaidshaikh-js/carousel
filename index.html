@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <title>Carousel</title>
+</head>
+
+<body>
+    <div id="slideshow-container">
+        <div class="slide">
+            <div class="number">1/4</div>
+            <figure>
+                <img src="./images/forest.jpg" alt="Forest" class="slide-img">
+                <figcaption>Forest</figcaption>
+            </figure>
+        </div>
+
+        <div class="slide">
+            <div class="number">2/4</div>
+            <figure>
+                <img src="./images/mountain-landscape.jpg" alt="Mountain Landscape" class="slide-img">
+                <figcaption>Mountain Landscape</figcaption>
+            </figure>
+        </div>
+
+        <div class="slide">
+            <div class="number">3/4</div>
+            <figure>
+                <img src="./images/road.jpg" alt="Road" class="slide-img">
+                <figcaption>Road</figcaption>
+            </figure>
+        </div>
+
+        <div class="slide">
+            <div class="number">4/4</div>
+            <figure>
+                <img src="./images/tree.jpg" alt="Tree" class="slide-img">
+                <figcaption>Tree</figcaption>
+            </figure>
+        </div>
+
+        <!-- previous and next button -->
+        <a id="previous" onclick="nextSlide(-1)">&#10094;</a>
+        <a id="next" onclick="nextSlide(1)">&#10095;</a>
+    </div>
+
+    <div id="carousel-indicators">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="attribution">
+        <p>
+            Coded by <a href="https://github.com/junaidshaikh-js" target="_blank">Junaid Shaikh</a></p>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

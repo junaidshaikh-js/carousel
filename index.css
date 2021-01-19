@@ -1,0 +1,131 @@
+/* CSS reset */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1rem = 10px */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Baloo 2', cursive;
+    color: white;
+    overflow-x  : hidden;
+}
+
+#slideshow-container{
+    width: 80vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* responsive image */
+img{
+    width: 100%;
+    height: auto;
+}
+
+.number{
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    display: inline-block;
+}
+
+figcaption{
+    margin-top: -6rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.slide{
+    display: none;
+}
+
+/* previous and next button */
+#previous, #next{
+    position: absolute;
+    top: 48%;
+    padding: 1.5rem;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+#previous:hover, #next:hover{
+    background: rgba(0, 0, 0, 0.6)
+}
+
+#next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* carousel indicator */
+#carousel-indicators{
+    padding: 1rem;
+    margin: 0.6rem;
+    text-align: center;
+}
+
+.dot{
+    display: inline-block;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 4px 0 4px;
+    border-radius: 50%;
+    background-color: #bbb;
+}
+
+.active, .dot:hover{
+    background-color: #717171;;
+}
+
+/* attribution section */
+.attribution{
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.attribution a:hover{
+    text-decoration: none;
+} 
+
+
+@media screen and (max-width: 540px){
+.number{
+    top: 2.5rem;
+    left: 1rem;
+    font-size: 1rem;
+} 
+
+figcaption{
+    margin-top: -4rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#previous, #next{
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#carousel-indicators{
+    padding: 0;
+}
+}
+
+
